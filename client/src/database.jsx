@@ -1,3 +1,5 @@
+import { de } from "date-fns/locale";
+
 const samplePlaces = [
   {
     _id: '1',
@@ -6,6 +8,8 @@ const samplePlaces = [
     title: 'Cozy Apartment in City Center',
     price: '₹3000',
     extraInfo: 'Newly renovated apartment with modern amenities.',
+    description:
+      'This cozy apartment is located in the heart of the city, close to all major attractions. It features a fully equipped kitchen, spacious living area, and a comfortable bedroom.',
     perks: ['Free Wi-Fi', 'Gym access', 'Parking'],
     maxGuests: 4,
   },
@@ -16,6 +20,8 @@ const samplePlaces = [
     title: 'Luxury Villa with Pool',
     price: '₹12000',
     extraInfo: 'Private villa with stunning ocean views.',
+    description:
+      'Experience luxury living in this stunning villa. Enjoy the private pool, spacious terrace, and breathtaking views of the ocean. Perfect for a relaxing getaway.',
     perks: ['Private pool', 'Chef service', 'Spa access'],
     maxGuests: 8,
   },
@@ -26,6 +32,8 @@ const samplePlaces = [
     title: 'Mountain Cabin Retreat',
     price: '₹5000',
     extraInfo: 'Secluded cabin perfect for nature lovers.',
+    description:
+      'Escape to the mountains in this charming cabin. Surrounded by nature, it offers a cozy fireplace, fully equipped kitchen, and outdoor seating area. Ideal for hiking and relaxation.',
     perks: ['Fireplace', 'Hiking trails', 'Pet-friendly'],
     maxGuests: 6,
   },
@@ -36,6 +44,8 @@ const samplePlaces = [
     title: 'Beachfront Bungalow',
     price: '₹8000',
     extraInfo: 'Direct beach access with private patio.',
+    description:
+      'Enjoy the sun and sand in this beachfront bungalow. Features include a private patio, fully equipped kitchen, and easy access to the beach. Perfect for families or groups.',
     perks: ['Beach chairs', 'Water sports equipment', 'BBQ grill'],
     maxGuests: 5,
   },
@@ -46,6 +56,8 @@ const samplePlaces = [
     title: 'Urban Loft with City View',
     price: '₹6500',
     extraInfo: 'Stylish loft in the heart of the city.',
+    description:
+      'This urban loft offers stunning city views and modern amenities. Located in a vibrant neighborhood, it features an open floor plan, fully equipped kitchen, and stylish decor.',
     perks: ['Rooftop terrace', 'Concierge service', 'Bicycle rental'],
     maxGuests: 3,
   },
@@ -66,6 +78,8 @@ const samplePlaces = [
     title: 'Modern Studio Apartment',
     price: '₹7000',
     extraInfo: 'Compact studio with city skyline views.',
+    description:
+      'This modern studio apartment is perfect for solo travelers or couples. It features a fully equipped kitchen, comfortable living area, and stunning views of the city skyline.',
     perks: ['Smart home features', '24-hour security', 'Laundry facilities'],
     maxGuests: 2,
   },
@@ -76,6 +90,8 @@ const samplePlaces = [
     title: 'Seaside Villa with Private Beach',
     price: '₹15000',
     extraInfo: 'Exclusive villa with private beach access.',
+    description:
+      'Experience luxury in this seaside villa. Enjoy private beach access, an infinity pool, and a personal butler. Perfect for a lavish getaway with friends or family.',
     perks: ['Private beach', 'Infinity pool', 'Personal butler'],
     maxGuests: 10,
   },
@@ -86,6 +102,8 @@ const samplePlaces = [
     title: 'Rustic Farmhouse with Garden',
     price: '₹4500',
     extraInfo: 'Charming farmhouse with a large garden.',
+    description:
+      'This rustic farmhouse is perfect for families or groups. It features a large garden, outdoor dining area, and farm animals. Enjoy the tranquility of country living.',
     perks: ['Organic garden', 'Farm animals', 'Outdoor dining'],
     maxGuests: 7,
   },
@@ -96,6 +114,8 @@ const samplePlaces = [
     title: 'Modern Studio Apartment',
     price: '₹7000',
     extraInfo: 'Compact studio with city skyline views.',
+    description:
+      'This modern studio apartment is perfect for solo travelers or couples. It features a fully equipped kitchen, comfortable living area, and stunning views of the city skyline.',
     perks: ['Smart home features', '24-hour security', 'Laundry facilities'],
     maxGuests: 2,
   },
@@ -106,6 +126,8 @@ const samplePlaces = [
     title: 'Seaside Villa with Private Beach',
     price: '₹15000',
     extraInfo: 'Exclusive villa with private beach access.',
+    description:
+      'Experience luxury in this seaside villa. Enjoy private beach access, an infinity pool, and a personal butler. Perfect for a lavish getaway with friends or family.',
     perks: ['Private beach', 'Infinity pool', 'Personal butler'],
     maxGuests: 10,
   },
@@ -116,6 +138,8 @@ const samplePlaces = [
     title: 'Rustic Farmhouse with Garden',
     price: '₹4500',
     extraInfo: 'Charming farmhouse with a large garden.',
+    description:
+      'This rustic farmhouse is perfect for families or groups. It features a large garden, outdoor dining area, and farm animals. Enjoy the tranquility of country living.',
     perks: ['Organic garden', 'Farm animals', 'Outdoor dining'],
     maxGuests: 7,
   },
@@ -126,6 +150,8 @@ const samplePlaces = [
     title: 'Modern Studio Apartment',
     price: '₹7000',
     extraInfo: 'Compact studio with city skyline views.',
+    description:
+      'This modern studio apartment is perfect for solo travelers or couples. It features a fully equipped kitchen, comfortable living area, and stunning views of the city skyline.',
     perks: ['Smart home features', '24-hour security', 'Laundry facilities'],
     maxGuests: 2,
   },
@@ -136,6 +162,8 @@ const samplePlaces = [
     title: 'Seaside Villa with Private Beach',
     price: '₹15000',
     extraInfo: 'Exclusive villa with private beach access.',
+    description:
+      'Experience luxury in this seaside villa. Enjoy private beach access, an infinity pool, and a personal butler. Perfect for a lavish getaway with friends or family.',
     perks: ['Private beach', 'Infinity pool', 'Personal butler'],
     maxGuests: 10,
   },
