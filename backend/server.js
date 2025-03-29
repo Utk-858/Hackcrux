@@ -1,16 +1,11 @@
-const express = require('express');
+import express from 'express';
+import bannerbearRoutes from './routes/bannerbearRoutes.js';
+
 const app = express();
-const PORT = process.env.PORT || 3000;
-
-// Middleware
 app.use(express.json());
+app.use('/api/bannerbear', bannerbearRoutes);
 
-// Routes
-app.get('/', (req, res) => {
-  res.send('Welcome to the server!');
-});
-
-// Start the server
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

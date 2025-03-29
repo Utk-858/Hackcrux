@@ -18,10 +18,10 @@ router.post('/generate-image', async (req, res) => {
       {
         template: TEMPLATE_ID,
         modifications: [
-          { name: 'headline', text: headline },
-          { name: 'subtext', text: subtext },
-          { name: 'image', image_url: imageUrl }
-        ]
+    { name: 'headline', text: 'Hello, Bannerbear!' },
+    { name: 'subtext', text: 'Automated image generation' },
+    { name: 'image', image_url: 'https://res.cloudinary.com/dqskebjcf/image/upload/v1742456474/Rectangle388_h5wwe0.png' }
+  ]
       },
       {
         headers: { Authorization: `Bearer ${API_KEY}` }
