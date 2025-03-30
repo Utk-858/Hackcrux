@@ -10,6 +10,11 @@ const HotelLogin = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+  const hotelSuggestions = ['H123', 'H456', 'H789'];
+  const emailSuggestions = ['hotel1@gmail.com', 'hotel2@gmail.com', 'hotel3@gmail.com'];
+  const phoneSuggestions = ['+1234567890', '+9876543210', '+1122334455'];
+  const locationSuggestions = ['New York', 'Los Angeles', 'Chicago'];
+
   const handleLogin = (e) => {
     e.preventDefault();
 
@@ -25,42 +30,66 @@ const HotelLogin = () => {
           <div>
             <label className="block text-gray-700">Hotel ID</label>
             <input
+              list="hotelIds"
               type="text"
               value={hotelId}
               onChange={(e) => setHotelId(e.target.value)}
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
+            <datalist id="hotelIds">
+              {hotelSuggestions.map((id, index) => (
+                <option key={index} value={id} />
+              ))}
+            </datalist>
           </div>
           <div>
             <label className="block text-gray-700">Email</label>
             <input
+              list="emails"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
+            <datalist id="emails">
+              {emailSuggestions.map((mail, index) => (
+                <option key={index} value={mail} />
+              ))}
+            </datalist>
           </div>
           <div>
             <label className="block text-gray-700">Phone</label>
             <input
+              list="phones"
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
+            <datalist id="phones">
+              {phoneSuggestions.map((ph, index) => (
+                <option key={index} value={ph} />
+              ))}
+            </datalist>
           </div>
           <div>
             <label className="block text-gray-700">Location</label>
             <input
+              list="locations"
               type="text"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
               className="w-full p-2 border border-gray-300 rounded"
               required
             />
+            <datalist id="locations">
+              {locationSuggestions.map((loc, index) => (
+                <option key={index} value={loc} />
+              ))}
+            </datalist>
           </div>
           <div>
             <label className="block text-gray-700">Password</label>
