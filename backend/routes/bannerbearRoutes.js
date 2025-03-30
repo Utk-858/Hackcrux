@@ -16,12 +16,76 @@ router.post('/generate-image', async (req, res) => {
     const response = await axios.post(
       'https://api.bannerbear.com/v2/images',
       {
-        template: TEMPLATE_ID,
-        modifications: [
-    { name: 'headline', text: 'Hello, Bannerbear!' },
-    { name: 'subtext', text: 'Automated image generation' },
-    { name: 'image', image_url: 'https://res.cloudinary.com/dqskebjcf/image/upload/v1742456474/Rectangle388_h5wwe0.png' }
-  ]
+        "template": "V4WN6JDx3vX253Gqjk",
+        "modifications": [
+          {
+            "name": "background",
+            "color": null
+          },
+          {
+            "name": "image_container1",
+            "image_url": "https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg"
+          },
+          {
+            "name": "image_container2",
+            "image_url": "https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg"
+          },
+          {
+            "name": "image_container3",
+            "image_url": "https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg"
+          },
+          {
+            "name": "logo_container",
+            "image_url": "https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg"
+          },
+          {
+            "name": "border",
+            "color": null
+          },
+          {
+            "name": "rectangle",
+            "color": null
+          },
+          {
+            "name": "price",
+            "text": "You can change this text",
+            "color": null,
+            "background": null
+          },
+          {
+            "name": "title",
+            "text": "You can change this text",
+            "color": null,
+            "background": null
+          },
+          {
+            "name": "bedroom",
+            "text": "You can change this text",
+            "color": null,
+            "background": null
+          },
+          {
+            "name": "bathroom",
+            "text": "You can change this text",
+            "color": null,
+            "background": null
+          },
+          {
+            "name": "area",
+            "text": "You can change this text",
+            "color": null,
+            "background": null
+          },
+          {
+            "name": "overview",
+            "text": "You can change this text",
+            "color": null,
+            "background": null
+          }
+        ],
+        "webhook_url": null,
+        "transparent": false,
+        "metadata": null
       },
       {
         headers: { Authorization: `Bearer ${API_KEY}` }
