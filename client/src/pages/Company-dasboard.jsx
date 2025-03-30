@@ -252,7 +252,7 @@ const CompanyDashboard = () => {
       {/* Marketing Campaign Section - Updated with Full Width Sections */}
       <div className="mt-10 rounded-2xl border-l-4 border-indigo-500 bg-white p-6 shadow-xl">
         <h2 className="mb-6 text-2xl font-semibold text-gray-800">
-          Marketing Campaign Generator
+          Cold email Generator
         </h2>
 
 
