@@ -258,65 +258,16 @@ const CompanyDashboard = () => {
 
         {/* Cold Email Generator Section - Full Width */}
         <div className="flex flex-col gap-8">
-          <div className="flex w-full flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-md">
-            <h3 className="mb-4 text-xl font-semibold text-indigo-700">Cold Email Generator</h3>
-            
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              <div>
-                <label className="mb-2 block text-sm font-medium text-gray-700">
-                  Target Audience
-                </label>
-                <select className="w-full rounded-lg border border-gray-300 p-2 text-sm">
-                  <option>Business Travelers</option>
-                  <option>Families</option>
-                  <option>Couples</option>
-                  <option>Group Bookings</option>
-                </select>
-              </div>
-              
-              <div>
-                <label className="mb-2 block text-sm font-medium text-gray-700">
-                  Promotion Type
-                </label>
-                <select className="w-full rounded-lg border border-gray-300 p-2 text-sm">
-                  <option>Special Rate</option>
-                  <option>Package Deal</option>
-                  <option>Extended Stay</option>
-                  <option>Seasonal Offer</option>
-                </select>
-              </div>
-              
-              <div>
-                <label className="mb-2 block text-sm font-medium text-gray-700">
-                  Tone
-                </label>
-                <select className="w-full rounded-lg border border-gray-300 p-2 text-sm">
-                  <option>Professional</option>
-                  <option>Friendly</option>
-                  <option>Persuasive</option>
-                  <option>Urgent</option>
-                </select>
-              </div>
-              
-              <div className="md:col-span-3">
-                <label className="mb-2 block text-sm font-medium text-gray-700">
-                  Email Content
-                </label>
-                <textarea
-                  className="h-32 w-full rounded-lg border border-gray-300 p-3 text-sm"
-                  placeholder="Enter key points to include in the email..."
-                  value={emailContent}
-                  onChange={(e) => setEmailContent(e.target.value)}
-                ></textarea>
-              </div>
-              
-              <div className="md:col-span-3">
-                <button className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700">
-                  Generate Email
-                </button>
-              </div>
-            </div>
-          </div>
+        <div className="flex justify-center p-4 my-4 border rounded-lg bg-gray-50">
+  <a 
+    href="https://cold-email-generator-hs.streamlit.app/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="px-6 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors duration-200"
+  >
+    Visit Website
+  </a>
+</div>
 
           {/* Generate Posters Section - Full Width - UPDATED WITH POSTER GENERATION */}
           <div className="flex w-full flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-md">
@@ -434,13 +385,13 @@ const CompanyDashboard = () => {
                   <div className="grid grid-cols-3 gap-2">
                     {/* Template options - would be populated dynamically */}
                     <div className="cursor-pointer rounded-md border-2 border-indigo-600 p-1">
-                      <img src="/api/placeholder/100/100" alt="Template 1" className="h-full w-full rounded object-cover" />
+                      <img src="https://res.cloudinary.com/dqskebjcf/image/upload/v1743314182/temp1_j6lygd.png" alt="Template 1" className="h-full w-full rounded object-cover" />
                     </div>
                     <div className="cursor-pointer rounded-md border border-gray-200 p-1 hover:border-indigo-300">
-                      <img src="/api/placeholder/100/100" alt="Template 2" className="h-full w-full rounded object-cover" />
+                      <img src="https://res.cloudinary.com/dqskebjcf/image/upload/v1743314181/tem2_bzqudj.png" alt="Template 2" className="h-full w-full rounded object-cover" />
                     </div>
                     <div className="cursor-pointer rounded-md border border-gray-200 p-1 hover:border-indigo-300">
-                      <img src="/api/placeholder/100/100" alt="Template 3" className="h-full w-full rounded object-cover" />
+                      <img src="https://res.cloudinary.com/dqskebjcf/image/upload/v1743314181/temp3_hyyjpe.png" alt="Template 3" className="h-full w-full rounded object-cover" />
                     </div>
                   </div>
                 </div>

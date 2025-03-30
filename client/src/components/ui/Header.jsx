@@ -33,7 +33,7 @@ export const Header = () => {
         {showSearchBar && <SearchBar />}
 
         <div className="flex items-center gap-4">
-          <Link to="/create-trip" className="bg-green-500 text-white py-2 px-4 rounded-lg">Make your trip</Link>
+          <Link to="https://itinerary-maker-hs.streamlit.app/" className="bg-green-500 text-white py-2 px-4 rounded-lg">Make your trip</Link>
           <Link to="/admin-login" className="bg-red-500 text-white py-2 px-4 rounded-lg">Admin</Link>
           
           <Link to={user ? '/account' : '/login'} className="w-50 flex h-full items-center gap-2 rounded-full border-gray-300 py-1 px-2 md:border">
